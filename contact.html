@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Burger Junction — Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo_img" src="img/logo.png" height="50" width="50" alt="logo">
+        <h1>Burger Junction</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Book Table</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero contact-hero">
+      <div class="hero-text">
+        <h2>Contact Us</h2>
+        <p>Questions, feedback or group booking? We’re here to help.</p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="contact-section">
+        <h2>Get in touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+              <h3>Contact details</h3>
+            <p>📍 123 Burger St, Your City</p>
+            <p>📞 <a href="tel:9876543210">9876543210</a></p>
+            <p>✉️ <a href="mailto:hello@burgerjunction.example">hello@burgerjunction.example</a></p>
+            <p>⏰ Mon–Sun: 10:00 — 22:00</p>
+
+            <h4>Find us</h4>
+            <div class="map">
+            <!-- Replace src with your location -->
+              <iframe title="Burger Junction location"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.63006780936!2d77.06889997318424!3d28.527280410793387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMxJzI0LjgiTiA3N8KwMDQnMzAuOCJF!5e0!3m2!1sen!2sin!4v1600000000000"allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="c-name">Full name</label>
+              <input id="c-name" name="name" type="text" required minlength="2" />
+            </div>
+
+            <div class="form-row">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="c-phone">Phone</label>
+              <input id="c-phone" name="phone" type="tel" pattern="[0-9\s+-]{7,15}" placeholder="9876543210" />
+            </div>
+
+            <div class="form-row full">
+              <label for="c-subject">Subject</label>
+              <input id="c-subject" name="subject" type="text" required />
+            </div>
+
+            <div class="form-row full">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-actions full">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>📍 Your City | 📞 9876543210</p>
+      <p>© 2026 Burger Junction. All Rights Reserved.</p>
+    </footer>
+
+  <!-- success toast -->
+    <div id="contact-success" class="toast" aria-live="polite" hidden>Message sent — thank you!</div>
+
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>

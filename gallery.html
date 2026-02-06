@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Burger Junction — Gallery</title>
+      <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo_img" src="img/logo.png" height="50" width="50" alt="logo">
+        <h1>Burger Junction</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="booking.html">Book Table</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero gallery-hero">
+      <div class="hero-text">
+        <h2>Our Gallery</h2>
+        <p>Delicious moments from Burger Junction</p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="gallery-section">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-grid" id="gallery">
+          <figure class="gallery-item"><img src="img/family pack.webp" alt="gallery 1"></figure>
+          <figure class="gallery-item"><img src="img/Pizza Combo.avif" alt="gallery 2"></figure>
+          <figure class="gallery-item"><img src="img/classic burger.webp" alt="gallery 3"></figure>
+          <figure class="gallery-item"><img src="img/cheese burger.jpg" alt="gallery 4"></figure>
+          <figure class="gallery-item"><img src="img/Cold Coffee.jpg" alt="gallery 5"></figure>
+          <figure class="gallery-item"><img src="img/Double Patty Burger.jpg" alt="gallery 6"></figure>
+          <figure class="gallery-item"><img src="img/french fries.jpg" alt="gallery 7"></figure>
+          <figure class="gallery-item"><img src="img/vag nuggets.jpg" alt="gallery 8"></figure>
+        </div>
+      </section>
+    </main>
+
+  <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <button class="lightbox-nav left" id="lightbox-prev" aria-label="Previous">‹</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+      <button class="lightbox-nav right" id="lightbox-next" aria-label="Next">›</button>
+    </div>
+
+    <footer>
+      <p>📍 Your City | 📞 9876543210</p>
+      <p>© 2026 Burger Junction. All Rights Reserved.</p>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
